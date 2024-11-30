@@ -1,0 +1,48 @@
+<section class="home">
+  <div class="container">
+    <div class="content">
+      <h1 class="title">
+        <span class="greeting">{{ greeting }}, je suis</span>
+        <span class="name">Kouassi Homo Marcel</span>
+        <span class="role">Développeur Web Full Stack / IT Officer</span>
+      </h1>
+      <p class="description">
+        Je conçois et développe des applications web modernes et performantes,
+        en utilisant les dernières technologies front-end et back-end. <br>
+        Mon expertise couvre l'ensemble de la stack technique, du front-end au back-end. <br>
+
+        Je suis aussi un <strong><i>IT Officer</i></strong>, responsable de la gestion des infrastructures et des systèmes informatiques.
+        Ce qui me permet de fournir des services de haute qualité et de garantir la stabilité et la fiabilité de mes applications.
+        <br>J'evolue egalement dans la securite informatique pour assurer la protection des données et des informations confidentielles.
+        Je suis aussi un leader technique, ayant une vision globale des besoins de mes clients et des exigences de leur entreprise.
+      </p>
+      <div class="cta-buttons">
+        <a routerLink="/projects" class="btn primary">Voir mes projets</a>
+        <a routerLink="/contact" class="btn secondary">Me contacter</a>
+      </div>
+    </div>
+    <div class="tech-stack">
+      <div class="tech-item" *ngFor="let tech of technologies">
+        <img [src]="tech.icon" [alt]="tech.name">
+        <span>{{tech.name}}</span>
+      </div>
+    </div>
+    <div class="animated-background">
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+    </div>
+  </div>
+</section>

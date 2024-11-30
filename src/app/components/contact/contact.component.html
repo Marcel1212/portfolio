@@ -1,0 +1,59 @@
+<section class="contact-section">
+  <div class="animated-circles">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+  </div>
+
+  <div class="contact-container">
+    <h2 class="section-title" data-aos="fade-down">Contact</h2>
+    <p class="contact-intro" data-aos="fade-up">N'hésitez pas à me contacter pour discuter de vos projets ou opportunités de collaboration.</p>
+    
+    <div class="contact-cards">
+      <!-- Email Card -->
+      <div class="contact-card" (click)="copyToClipboard(contactInfo.email)" data-aos="zoom-in" data-aos-delay="100">
+        <div class="card-icon">
+          <i class="fas fa-envelope"></i>
+        </div>
+        <div class="card-content">
+          <h3>Email</h3>
+          <p>{{ contactInfo.email }}</p>
+          <span class="copy-hint">Cliquez pour copier</span>
+        </div>
+        <div class="card-glow"></div>
+      </div>
+
+      <!-- Phone Card -->
+      <div class="contact-card" (click)="copyToClipboard(contactInfo.phone)" data-aos="zoom-in" data-aos-delay="200">
+        <div class="card-icon">
+          <i class="fas fa-phone"></i>
+        </div>
+        <div class="card-content">
+          <h3>Téléphone</h3>
+          <p>{{ contactInfo.phone }}</p>
+          <span class="copy-hint">Cliquez pour copier</span>
+        </div>
+        <div class="card-glow"></div>
+      </div>
+
+      <!-- LinkedIn Card -->
+      <a [href]="contactInfo.linkedin" target="_blank" class="contact-card" data-aos="zoom-in" data-aos-delay="300">
+        <div class="card-icon">
+          <i class="fab fa-linkedin"></i>
+        </div>
+        <div class="card-content">
+          <h3>LinkedIn</h3>
+          <p>Voir le profil</p>
+          <span class="copy-hint">Cliquez pour visiter</span>
+        </div>
+        <div class="card-glow"></div>
+      </a>
+    </div>
+
+    <div class="contact-message" data-aos="fade-up" data-aos-delay="400">
+      <p>Je suis disponible pour des opportunités de développement web full-stack et des projets passionnants.</p>
+    </div>
+  </div>
+</section>
